@@ -33,7 +33,7 @@ export default class TodoApp extends Component {
 
     onDelete = (todo) => {
         todoService.deleteTodo(todo).then(() => {
-            console.log('test')
+            this.props.history.push('/todos');
         });
     }
 
