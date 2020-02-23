@@ -7,11 +7,14 @@ export default class TodoDetails extends Component {
     render() {
         const { todo } = this.props;
         return (
-            <div>
-                <div>{todo.date}</div>
-                <div>{todo.time}</div>
-                <div>{todo.title}</div>
-                <div>{todo.content}</div>
+            <div className="todo-list-container">
+                <button onClick={this.props.goBack} className="app-button">Back</button>
+                <div className="todo-title-details ">{todo.title}</div>
+                <div className="date-and-time-details-container">
+                    <div className="todo-date-details"> {todo.date}</div>
+                    <div className="todo-time-details">{todo.time}</div>
+                </div>
+                <div className="todo-content-details">{todo.content}</div>
             </div>
         )
     }

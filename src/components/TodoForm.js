@@ -21,7 +21,7 @@ export default class TodoForm extends Component {
 
     setFormatDataForEdit() {
         const { todo } = this.props;
-        if(todo){
+        if (todo) {
             this.setState({ title: todo.title, content: todo.content })
         }
     }
@@ -39,12 +39,16 @@ export default class TodoForm extends Component {
 
     render() {
         return (
-            <div>
+            <div className="form-container">
                 <input type="text" placeholder="title" name="title"
                     onChange={this.inputChange} value={this.state.title}></input>
                 <input type="text" placeholder="content" name="content"
                     onChange={this.inputChange} value={this.state.content}></input>
-                <button onClick={this.onSave}>Save</button>
+                <div className="form-buttons">
+                    <button onClick={this.props.goBack} className="app-button">
+                        Back </button>
+                    <button onClick={this.onSave} className="app-button space-left">Save</button>
+                </div>
             </div>
         )
     }

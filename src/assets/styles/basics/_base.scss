@@ -50,6 +50,10 @@ p {
     display: flex;
 }
 
+.space-left{
+    margin-left: 5px;
+}
+
 @media (max-width: 1040px){
     .main-container {
         max-width: 900px;

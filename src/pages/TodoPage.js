@@ -26,8 +26,12 @@ export default class TodoPage extends Component {
         })
     }
 
+    goBack = () => {
+        this.props.history.push('/todos')
+    }
+
     render() {
         if (!this.state.todo) return <div className="loading">Loading...</div>
-        return <TodoDetails todo={this.state.todo}/>
+        return <TodoDetails todo={this.state.todo} goBack={this.goBack}/>
     }
 }

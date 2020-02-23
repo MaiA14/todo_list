@@ -10,10 +10,14 @@ export default class TodoAdd extends Component {
         })
     }
 
+    goBack = () => {
+        this.props.history.push('/todos')
+    }
+
     render() {
         return (
-            <div className="add-todo-container">
-                <TodoForm onSave={this.onAddTodo}></TodoForm>
+            <div className="todo-list-container">
+                <TodoForm onSave={this.onAddTodo}  goBack={this.goBack}></TodoForm>
             </div>
         )
     }

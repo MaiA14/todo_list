@@ -15,7 +15,8 @@ function createTodos() {
     const todos =  [
         new Todo('To finish homework', 'finish this React app'),
         new Todo('To convert this app', 'To convert this app to Angular app'),
-        new Todo('To create another app', 'to create full stack app'),
+        new Todo('Create another app', 'to create full stack app'),
+        new Todo('Support mobile', 'if this app not supports mobile, create some media queries')
     ]
     storageService.store('todos', todos)
     return todos;

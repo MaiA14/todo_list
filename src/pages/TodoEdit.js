@@ -31,11 +31,15 @@ export default class TodoEdit extends Component {
         })
     }
 
+    goBack = () => {
+        this.props.history.push('/todos')
+    }
+
     render() {
         if (!this.state.todo) return <div className="loading">Loading...</div>
         return (
-            <div className="edit-todo-container">
-                <TodoForm todo={this.state.todo} onSave={this.onEditTodo}></TodoForm>
+            <div className="todo-list-container">
+                <TodoForm todo={this.state.todo} onSave={this.onEditTodo}  goBack={this.goBack}></TodoForm>
             </div>
         )
     }
