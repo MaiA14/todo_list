@@ -43,7 +43,7 @@ export default class TodoApp extends Component {
                 <h1 className="todo-title">Todo List</h1>
                 <div className="buttons-container">
 
-                    <Link to={`/todos/addTodo`}>
+                    <Link to={`/addTodo`}>
                         <button className="add-todo">+</button>
                     </Link>
                     <TodoFilter filterBy={this.state.filterBy}

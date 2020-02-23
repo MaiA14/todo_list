@@ -10,7 +10,7 @@ export default class TodoForm extends Component {
         time: utils.getFormattedTime()
     }
 
-    componentWillMount() {
+    componentDidMount() {
         this.setFormatDataForEdit();
     }
 
@@ -21,7 +21,9 @@ export default class TodoForm extends Component {
 
     setFormatDataForEdit() {
         const { todo } = this.props;
-        this.setState({ title: todo.title, content: todo.content })
+        if(todo){
+            this.setState({ title: todo.title, content: todo.content })
+        }
     }
 
     onSave = () => {
