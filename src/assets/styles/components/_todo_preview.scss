@@ -1,0 +1,29 @@
+.todo-preview{
+    border-bottom: 1px solid  rgba(0, 0, 0, 0.4);;
+    opacity: 0.7;
+    padding: 10px;
+    font-family: mons;
+    font-size: rem(17px);
+}
+
+.todo-line{
+    display: flex;
+}
+
+.todo-title-preview{
+    width: 90%;
+}
+
+.edit-button{
+    border: none;
+    outline: none;
+    cursor: pointer;
+    background: none;   
+}
+
+.trash-button{
+    border: none;
+    outline: none;
+    cursor: pointer;
+    background: none;
+}
