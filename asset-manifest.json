@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/todo_list/static/css/main.47728778.chunk.css",
+    "main.js": "/todo_list/static/js/main.4b42be00.chunk.js",
+    "main.js.map": "/todo_list/static/js/main.4b42be00.chunk.js.map",
+    "runtime-main.js": "/todo_list/static/js/runtime-main.cbeaa8c1.js",
+    "runtime-main.js.map": "/todo_list/static/js/runtime-main.cbeaa8c1.js.map",
+    "static/js/2.4cb62e4c.chunk.js": "/todo_list/static/js/2.4cb62e4c.chunk.js",
+    "static/js/2.4cb62e4c.chunk.js.map": "/todo_list/static/js/2.4cb62e4c.chunk.js.map",
+    "index.html": "/todo_list/index.html",
+    "precache-manifest.6597b28b639362dc2c383939f290b8b0.js": "/todo_list/precache-manifest.6597b28b639362dc2c383939f290b8b0.js",
+    "service-worker.js": "/todo_list/service-worker.js",
+    "static/css/main.47728778.chunk.css.map": "/todo_list/static/css/main.47728778.chunk.css.map",
+    "static/js/2.4cb62e4c.chunk.js.LICENSE.txt": "/todo_list/static/js/2.4cb62e4c.chunk.js.LICENSE.txt",
+    "static/media/global.scss": "/todo_list/static/media/Montserrat-SemiBold.c641dbee.ttf"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.cbeaa8c1.js",
+    "static/js/2.4cb62e4c.chunk.js",
+    "static/css/main.47728778.chunk.css",
+    "static/js/main.4b42be00.chunk.js"
+  ]
+}
